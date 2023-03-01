@@ -52,7 +52,7 @@
                 <img src="./imagen/fun001.jpeg" id="img-modal" class="imagen-modal" alt="...">
                 <div class="modal-card-body">
                   <h6 id="title-modal">Cubre</h6>
-                  <p>Remera = $XX.XX <br>
+                  <p id="precio-modal">Remera = $XX.XX <br>
                     Calza = $XX.XX 
                   </p>
                 </div>
@@ -78,7 +78,7 @@
                 <!-- <p id="cambiar1"> hola</p> -->
                 <!-- <p>Remera = $XX.XX <br>
                   Calza = $XX.XX </p> -->
-                <button type="button" class="btn btn-primary" onclick="changeCam001()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-foto="./imagen/cam001.jpeg" data-bs-titulo="Cubre cama gris" data-bs-precio="$4.500">
                   Cotizar
                 </button>
               </div>
@@ -91,7 +91,7 @@
                 <h6>Card title</h6>
                 <!-- <p>Remera = $XX.XX <br>
                   Calza = $XX.XX </p> -->
-                <button type="button" class="btn btn-primary" onclick="changeCam002()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-foto="./imagen/cam002.jpeg" data-bs-titulo="Cubre cama blanco" data-bs-precio="$6.000">
                   Cotizar
                 </button>
               </div>
@@ -104,7 +104,7 @@
                 <h6>Card title</h6>
                 <!-- <p>Remera = $XX.XX <br>
                   Calza = $XX.XX </p> -->
-                <button type="button" class="btn btn-primary" onclick="changeCam003()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-foto="./imagen/cam003.jpeg" data-bs-titulo="Cubre cama arena" data-bs-precio="$12.000">
                   Cotizar
                 </button>
               </div>
@@ -112,25 +112,25 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="./imagen/cam004.jpeg" class="card-img-top" alt="...">
+              <img src="./imagen/cam004.jpeg" class="card-img-top cardFoto" alt="...">
               <div class="card-body">
-                <h6>Card title</h6>
-                <!-- <p>Remera = $XX.XX <br>
-                  Calza = $XX.XX </p> -->
-                <button type="button" class="btn btn-primary" onclick="changeCam004()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h6 class="cardTitle">Cubre cama blanco con volados</h6>
+                <p class="cardPrecio">1 plaza = $5000 <br>
+                  2 plazas = $7000 </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Cotizar
                 </button>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
-              <img src="./imagen/cam005.jpeg" class="card-img-top" alt="...">
+            <div id="probar" class="card">
+              <img src="./imagen/cam005.jpeg" class="card-img-top cardFoto" alt="...">
               <div class="card-body">
-                <h6>Card title</h6>
-                <!-- <p>Remera = $XX.XX <br>
-                  Calza = $XX.XX </p> -->
-                <button type="button" class="btn btn-primary" onclick="changeCam005()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h6 class="cardTitle">Cubre cama gris desordenado</h6>
+                <p class="cardPrecio"> 1 plaza = $3.000 <br>
+					2 plazas = $4.500 </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Cotizar
                 </button>
               </div>
