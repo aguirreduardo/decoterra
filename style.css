@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+/* Header */
+header{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+    header img {
+    height: 30vh;
+    }   
+
+/* Nav */
+
+nav{
+    background-color: rgb(243, 171, 207) ;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+    }
+        nav ul li {
+            display: inline-block;
+            padding:  5px 0px;
+            border-radius: 0.5rem;
+            
+        }
+
+            nav ul li a {
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 0.5rem;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            nav ul li a:hover {
+                background: rgb(233, 76, 212);
+                color:white;
+            }
+/* End NAV */
+
+/* Main index*/
+main{
+    background-image: linear-gradient(to bottom,white , rgb(243, 171, 207),white);
+}
+    main .section-title{
+        
+        padding-top: 6.5rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-size:large;
+        text-shadow:0px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+    main section{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+            .col {
+                border: 1px solid pink; 
+                margin: 0.5rem;
+                width: 25%;
+                padding: 0;
+                background-color: white;
+               
+            }
+                .card{
+                    border: none;
+                    /* position: relative;
+                    height: 17rem; */
+                }
+                    .card-body {
+                        /* position: absolute; */
+                        bottom: 2px;
+                    }
+                        .card-body h6{
+                            font-size:13px;
+                            z-index: 0px;
+
+                        }
+                        .card-body p{
+                            font-size:xx-small;
+                        }
+/* End Main index */
+
+/*Modal: Ventana emergente*/
+#img-modal { 
+    width: 100%;
+}
+/*Fin de ventana emergente*/
+/* Footer */
+footer{
+    margin-top: 1rem;
+    height: auto;
+    background-color: rgb(243, 171, 207) ;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.seguinos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+   
+}
+.seguinos ul{
+    padding-left: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+.seguinos-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+.seguinos-list a{
+    text-decoration:none;
+    margin-left: 1.5rem;
+}
+.contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+.contactanos ul{
+    padding: 0rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.contactanos-list{
+    list-style-type: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.contactanos-list a{
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(230, 42, 145);
+    font-weight: bold;
+
+}
+.contactanos-list li{
+    margin: 0.5rem;
+}
+.social{
+    color: rgb(230, 42, 145);
+}
+/* End Footer */
+
+/* Form cotizacion */
+.cotizacion-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+} 
+.cotizacion {
+  background-color: rgb(243, 171, 207);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  height: auto;
+  /* width: 80%; */
+}
+
+.cotizacion input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.2rem;
+  border-width: 0;
+  margin-bottom: 0.5rem;
+}
+#email{
+    margin-bottom: 1rem;
+}
+.cotizacion textarea {
+  width: 100%;
+  height: 20vh;
+  border-radius: 0.2rem;
+  border-width: 0;
+  
+}
+.form-control {
+  background-color: rgb(243, 171, 207);
+}
+/* End form cotizacion */
+/* Responsive */
+@media (min-width: 800px) {
+    .col{
+        width: 20%;
+    }
+    .card{
+        font-size:medium;
+    }
+    .card h6{
+        font-size:medium;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seguinos{
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .contactanos{
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .cotizacion {
+        width: 800px;
+    }
+}
